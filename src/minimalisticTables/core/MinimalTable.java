@@ -16,16 +16,33 @@ public class MinimalTable {
 		entries = new ArrayList<>();
 	}
 	
-	public static void addEntry(String str)
+	public void addEntry(String str)
 	{
 		//add entry to list
+		//FIXME
+		entries.add(str);
+		debugEntries();
 		
 	}
 	
-	private static void removeDuplicates()
+	private void debugEntries()
+	{
+		
+	}
+	
+	private void removeDuplicates()
 	{
 		//minimize if you have to.
 	}
 	
-	
+	public void display()
+	{
+		System.out.println();
+		System.out.println(name);
+		for(String s: entries)
+		{
+			System.out.println(s);
+		}
+		
+	}
 }
