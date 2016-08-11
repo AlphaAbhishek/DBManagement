@@ -18,10 +18,10 @@ public class MinimalTable {
 	
 	public void addEntry(String str)
 	{
-		//add entry to list
-		//FIXME
+
 		entries.add(str);
 		debugEntries();
+		removeOverlaps();
 		
 	}
 	
@@ -30,7 +30,7 @@ public class MinimalTable {
 		
 	}
 	
-	private void removeDuplicates()
+	private void removeOverlaps()
 	{
 		//minimize if you have to.
 	}
